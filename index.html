@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <button type="button" class="btn btn-link p-0">High Scores</button>
+    <div class="position-fixed" id="timer">Time: 0</div>
+
+    <div class="container">
+        <div class="row justify-content-center mt-5" id="quiz-header">
+            <h1>Code Quiz!</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 text-center mt-3">Try to answer the coding related question within the time limit. Points
+                are awarded for each correct answer. If a question is answered incorrectly, you will lose 10 seconds off
+                the
+                timer. Your final score is the number of seconds left on the timer after the quiz is finished.</div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <button class="btn btn-primary" type="submit" id="start-button">Begin Quiz</button>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
