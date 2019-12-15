@@ -235,7 +235,7 @@ startQuizButton.addEventListener("click", function () {
         secondsLeft--;
         timerEl.textContent = "Time: " + secondsLeft;
 
-        if (secondsLeft === 0) {
+        if (secondsLeft === 0 || secondsLeft < 0) {
             clearInterval(interval);
             gameOverScreen();
         }
